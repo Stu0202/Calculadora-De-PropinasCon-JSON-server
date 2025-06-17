@@ -82,9 +82,23 @@ function showDishes(dishes){
         category.classList.add('col-md-3')
         category.textContent = categories[dish.category]
 
+        const inputAmount = document.createElement('INPUT')
+        inputAmount.type = 'number'
+        inputAmount.min = 0
+        inputAmount.value = 0
+        inputAmount.id = `product-${dish.id}`
+        inputAmount.classList.add('form-control')
+
+        const addInput = document.createElement('DIV')
+        addInput.classList.add('col-md-2')
+        addInput.appendChild(inputAmount)
+
+
+
         row.appendChild(name)
         row.appendChild(price)
         row.appendChild(category)
+        row.appendChild(addInput)
 
         content.appendChild(row)
     });
