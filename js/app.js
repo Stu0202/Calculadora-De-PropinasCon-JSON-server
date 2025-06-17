@@ -14,6 +14,21 @@ function saveCostumer() {
     const emptyFields = [table,hour].some( field => field === '')
 
     if(emptyFields){
-        console.log('There are empty fields');
+
+        const alertExists = document.querySelector('.alert-danger')
+        if(!alertExists){
+            const alert = document.createElement('DIV')
+            alert.classList.add('d-block','text-center','alert','alert-danger')
+            alert.textContent = 'Are Fields are Required'
+            document.querySelector('.modal-body form').appendChild(alert)
+
+            setTimeout(() => {
+                alert.remove()
+            }, 3000);
+        }
+
+        return;
+
+      
     }
 }
