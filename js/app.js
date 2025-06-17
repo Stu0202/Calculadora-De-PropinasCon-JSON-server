@@ -1,7 +1,7 @@
 let costumer = {
-    hour:'',
     table:'',
-    plates:[]
+    hour:'',
+    dishes:[]
 }
 
 const btnSaveCostumer = document.querySelector('#guardar-cliente')
@@ -31,4 +31,10 @@ function saveCostumer() {
 
       
     }
+
+    costumer = {...costumer, table, hour}
+    
+    const modalForm = document.querySelector('#formulario')
+    const modalBootstrap = bootstrap.Modal.getInstance(modalForm)
+    modalBootstrap.hide()
 }
