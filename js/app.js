@@ -89,6 +89,13 @@ function showDishes(dishes){
         inputAmount.id = `product-${dish.id}`
         inputAmount.classList.add('form-control')
 
+        inputAmount.onchange = function(){
+            const amount = parseInt(inputAmount.value)
+            addDish({...dish,amount})
+        }
+
+
+
         const addInput = document.createElement('DIV')
         addInput.classList.add('col-md-2')
         addInput.appendChild(inputAmount)
@@ -102,4 +109,8 @@ function showDishes(dishes){
 
         content.appendChild(row)
     });
+}
+
+function addDish(product){
+    console.log(product);
 }
