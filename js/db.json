@@ -1,76 +1,76 @@
 {
-    "platillos": [
+    "dishes": [
       {
         "id": 1,
-        "nombre": "Encebollado",
-        "precio": 3,
-        "categoria": 1
+        "name": "Encebollado",
+        "price": 3,
+        "category": 1
       },
       {
         "id": 2,
-        "nombre": "Hornado",
-        "precio": 4,
-        "categoria": 1
+        "name": "Hornado",
+        "price": 4,
+        "category": 1
       },
       {
         "id": 3,
-        "nombre": "Humitas con café",
-        "precio": 2.50,
-        "categoria": 3
+        "name": "Humitas con café",
+        "price": 2.50,
+        "category": 3
       },
       {
         "id": 4,
-        "nombre": "Yaguarlocro",
-        "precio": 3.50,
-        "categoria": 3
+        "name": "Yaguarlocro",
+        "price": 3.50,
+        "category": 3
       },
       {
         "id": 5,
-        "nombre": "Encebollado mixto",
-        "precio": 5.50,
-        "categoria": 2
+        "name": "Encebollado mixto",
+        "price": 5.50,
+        "category": 2
       },
       {
         "id": 6,
-        "nombre": "Fresas con Espumilla",
-        "precio": 1.50,
-        "categoria": 1
+        "name": "Fresas con Espumilla",
+        "price": 1.50,
+        "category": 1
       },
       {
         "id": 7,
-        "nombre": "Tamales",
-        "precio": 2,
-        "categoria": 1
+        "name": "Tamales",
+        "price": 2,
+        "category": 1
       },
       {
         "id": 8,
-        "nombre": "Jugo de Borojo",
-        "precio": 0.75,
-        "categoria": 2
+        "name": "Jugo de Borojo",
+        "price": 0.75,
+        "category": 2
       },
       {
         "id": 9,
-        "nombre": "Empanadas con Morocho",
-        "precio": 2.25,
-        "categoria": 2
+        "name": "Empanadas con Morocho",
+        "price": 2.25,
+        "category": 2
       },
       {
         "id": 10,
-        "nombre": "Combo Pilsener",
-        "precio": 7,
-        "categoria": 3
+        "name": "Combo Pilsener",
+        "price": 7,
+        "category": 3
       },
       {
         "id": 11,
-        "nombre": "Combo Club",
-        "precio": 10,
-        "categoria": 2
+        "name": "Combo Club",
+        "price": 10,
+        "category": 2
       },
       {
         "id": 12,
-        "nombre": "Hijos con Queso",
-        "precio": 2.50,
-        "categoria": 2
+        "name": "Higos con Queso",
+        "price": 2.50,
+        "category": 2
       }
     ]
   }

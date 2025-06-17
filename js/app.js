@@ -49,10 +49,26 @@ function showOrders(){
 }
 
 function getDishes(){
-    const url = 'http://localhost:4000/platillos'
+    const url = 'http://localhost:4000/dishes'
     
     fetch(url)
         .then(response => response.json())
-        .then(result => console.log(result))
+        .then(result => showDishes(result))
         .catch(error => console.log(error))
+}
+
+function showDishes(dishes){
+    const content = document.querySelector('#platillos .contenido')
+    
+    dishes.forEach(dish => {
+        const row = document.createElement('DIV')
+        row.classList.add('row')
+
+        const name = document.createElement('DIV')
+        name.classList.add('col-md-4')
+        name.textContent = dish.name
+
+        row.appendChild(name)
+        content.appendChild(row)
+    });
 }
