@@ -37,4 +37,11 @@ function saveCostumer() {
     const modalForm = document.querySelector('#formulario')
     const modalBootstrap = bootstrap.Modal.getInstance(modalForm)
     modalBootstrap.hide()
+
+    showOrders()
+}
+
+function showOrders(){
+    const hiddenSections = document.querySelectorAll('.d-none')
+    hiddenSections.forEach(section => section.classList.remove('d-none'))
 }
