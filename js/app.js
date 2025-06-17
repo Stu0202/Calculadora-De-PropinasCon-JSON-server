@@ -39,9 +39,20 @@ function saveCostumer() {
     modalBootstrap.hide()
 
     showOrders()
+
+    getDishes()
 }
 
 function showOrders(){
     const hiddenSections = document.querySelectorAll('.d-none')
     hiddenSections.forEach(section => section.classList.remove('d-none'))
+}
+
+function getDishes(){
+    const url = 'http://localhost:4000/platillos'
+    
+    fetch(url)
+        .then(response => response.json())
+        .then(result => console.log(result))
+        .catch(error => console.log(error))
 }
