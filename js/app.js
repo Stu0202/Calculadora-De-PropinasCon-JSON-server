@@ -4,6 +4,12 @@ let costumer = {
     dishes:[]
 }
 
+const categories = {
+    1: 'Food',
+    2: 'Drinks',
+    3: 'Desserts'
+}
+
 const btnSaveCostumer = document.querySelector('#guardar-cliente')
 btnSaveCostumer.addEventListener('click',saveCostumer)
 
@@ -62,13 +68,24 @@ function showDishes(dishes){
     
     dishes.forEach(dish => {
         const row = document.createElement('DIV')
-        row.classList.add('row')
+        row.classList.add('row','py-3','border-top')
 
         const name = document.createElement('DIV')
         name.classList.add('col-md-4')
         name.textContent = dish.name
 
+        const price = document.createElement('DIV')
+        price.classList.add('col-md-3', 'fw-bold')
+        price.textContent = `$${dish.price}`
+
+        const category = document.createElement('DIV')
+        category.classList.add('col-md-3')
+        category.textContent = categories[dish.category]
+
         row.appendChild(name)
+        row.appendChild(price)
+        row.appendChild(category)
+
         content.appendChild(row)
     });
 }
