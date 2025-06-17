@@ -112,5 +112,13 @@ function showDishes(dishes){
 }
 
 function addDish(product){
-    console.log(product);
+   
+    let {dishes} = costumer
+
+    //Revisar que la cantidad sea > 0
+
+    if(product.amount > 0){
+        costumer.dishes = [...dishes, product]
+    }
+    console.log(costumer.dishes);
 }
